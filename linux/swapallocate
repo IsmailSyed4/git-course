@@ -1,0 +1,13 @@
+fallocate -l 2G /mnt/swapfile
+dd if=/dev/zero of=/mnt/swapfile bs=1M count=2048
+chmod 700 /mnt/swapfile
+swapon /mnt/swapfile
+swapon -s
+swapoff /mnt/swapfile
+vi /etc/waagent.conf
+systemctl restart waagent
+swapon -s
+cat /proc/swaps
+swapoff /mnt/swapfile
+cat /proc/swaps
+du -sh /mnt/swapfile
