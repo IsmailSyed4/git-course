@@ -1,0 +1,78 @@
+ git --version
+    git config
+    
+ 
+   git config --global --list
+   git config --global user.name "ismail syed"
+
+   git config --global user.mail "syedismailsyed4@gmail.com"
+  
+   git config --global --list
+
+
+rm -rf  .git
+
+git init -b main
+
+git status
+
+git status               	   /*no commits yet*/ untracked file: firstcode.txt
+
+git add file name    	/* git add firstcode.txt*/
+
+git log	 /* to check the commit history in git
+
+
+git commit -m "my first commit"	 to commit the above new file
+
+___________________________________________________________________________________________________
+working directory --->>	git add --->>	staging areaa ---->>	git commit ---->>  local repository
+___________________________________________________________________________________________________
+
+
+
+git commit -a -m "my third commit"	/*this command will  skip the staging and directly commit using -a */
+
+_____________________________________________________________
+working directory --->>	git commit -a --->>  local repositor
+-------------------------------------------------------------
+
+git  diff	/*the command will help us to check the history of edit in the particular file or history of file in working directory
+
+git restore filename	if we unexpectedly deleted the file
+
+git rm --cached filename 	git rm --cached cred.txt
+
+
+git clone https://github.com/torvalds/linux.git     	/*this command will copy and download from GitHub */
+
+https://github.com/IsmailSyed4/git-course.git	       /*I have created new repository in github*/
+
+echo "# git-course" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/IsmailSyed4/git-course.git
+git push -u origin main
+
+
+-------------------------------------------------
+
+git remote add origin https://github.com/IsmailSyed4/git-course.git
+git branch -M main
+git push -u origin main
+
+-------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
